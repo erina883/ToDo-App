@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:background="@drawable/custom_edittetext"
+            android:id="@+id/mylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="your task will go here"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"/>
+
+
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:id="@+id/deatls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deatls"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
